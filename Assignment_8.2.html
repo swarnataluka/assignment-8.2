@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8.2</title>
+</head>
+
+<body>
+    <script>
+
+        var tableNumber = 20;
+        var items = ["Burger", "pasta", "coke"];
+        prepareFood(tableNumber, items, serveFood);
+
+        function prepareFood(tableNumber, items, callback) {
+            console.log('preparing food for items - ', items);
+            callback(tableNumber, items);
+        }
+
+        function serveFood(tableNumber, items) {
+            console.log('serving food for items - ', items);
+
+        }
+
+       
+    </script>
+</body>
+
+</html>
